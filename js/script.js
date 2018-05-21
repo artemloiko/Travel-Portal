@@ -36,8 +36,11 @@ body.addEventListener('touchend', function (e) {
 	var xEnd = touches[0].screenX;
 	var yEnd = touches[0].screenY;
 
-	if (xStart - xEnd > 50) toggled.classList.add('openedBar');
-	if (xStart - xEnd < -50) toggled.classList.remove('openedBar');
+	if (xStart - xEnd > 50 && Math.abs(yStart - yEnd) < 40) {
+		toggled.classList.add('openedBar');
+		toggled.style.top = window.pageYOffset + "px";
+	}
+	if (xStart - xEnd < -50 && Math.abs(yStart - yEnd) < 40) toggled.classList.remove('openedBar');
 });
 
 // Календарь
