@@ -38,7 +38,7 @@ body.addEventListener('touchend', function (e) {
 
 	if (xStart - xEnd > 50 && Math.abs(yStart - yEnd) < 40) {
 		toggled.classList.add('openedBar');
-		toggled.style.top = window.pageYOffset + "px";
+		if (window.pageYOffset > 100) toggled.style.top = window.pageYOffset + "px";
 	}
 	if (xStart - xEnd < -50 && Math.abs(yStart - yEnd) < 40) toggled.classList.remove('openedBar');
 });
