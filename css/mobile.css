@@ -7,9 +7,7 @@
   }
 }
 
-@-webkit-keyframes {}
-
-@keyframes {}@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 100%;
   }
@@ -21,6 +19,7 @@
     box-sizing: border-box;
     top: 0;
     right: 0;
+    left: auto;
     height: 11rem;
     width: 13rem;
     min-width: 13rem;
