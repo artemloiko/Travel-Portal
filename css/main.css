@@ -75,6 +75,7 @@ div {
   display: inline-block;
   position: absolute;
   bottom: -2rem;
+  left: 50%;
   height: 4rem;
   width: 32%;
   min-width: 240px;
